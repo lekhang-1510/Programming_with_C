@@ -52,7 +52,7 @@ int main() {
     printf("\nDia chi cua bien ngan_sach: %p", &ngan_sach);
     printf("\nDia chi cua bien diem_trung_binh: %p", &diem_trung_binh);
 
-    tien_do = ngan_sach / 26.388;
-    printf("\n\nNgan sach cua ban %d(vnd) = %.2f (do)", ngan_sach, tien_do);
+    tien_do = ngan_sach / 26388.0;
+    printf("\n\nNgan sach cua ban %d(vnd) = %.2f (do la)", ngan_sach, tien_do);
     return 0;
 }
