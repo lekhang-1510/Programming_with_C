@@ -14,6 +14,19 @@ int main() {
 
 #include <stdio.h>
 
+
+/*BAI TAP:
+1. Tạo một chương trình C:
+- Tạo các biến lưu trữ sau:
++ Điểm toán
++ Điểm lý
++ Điểm văn
++ Năm sinh
++ Ngân sách:
++ Điểm trung bình
++ Chuyển đổi giữa tiền Việt và tiền Đô la (Làm tròn 2 chữ số)
+*/
+
 int main() {
     float diem_toan = 7.8f;
     float diem_ly = 8.3f;
