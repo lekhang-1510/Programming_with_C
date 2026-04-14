@@ -22,37 +22,39 @@ int main() {
 + Điểm lý
 + Điểm văn
 + Năm sinh
-+ Ngân sách:
++ Ngân sách
 + Điểm trung bình
 + Chuyển đổi giữa tiền Việt và tiền Đô la (Làm tròn 2 chữ số)
 */
 
 int main() {
-    float diem_toan = 7.8f;
-    float diem_ly = 8.3f;
-    float diem_van = 6.5f;
-    int nam_sinh = 2001;
-    int ngan_sach = 15000000;
-    float diem_trung_binh;
-    float tien_do;
+    float diemToan = 7.8f;
+    float diemLy = 8.3f;
+    float diemVan = 6.5f;
+    int namSinh = 2001;
+    int nganSach = 15000000;
+    float diemTrungBinh;
+    float tienDo;
 
-    printf("\nDiem toan: %.1f diem", diem_toan);
-    printf("\nDiem ly: %.1f diem", diem_ly);
-    printf("\nDiem van: %.1f diem", diem_van);
-    printf("\nNam sinh cua ban: %d", nam_sinh);
-    printf("\nNgan sach cua ban: %d VND", ngan_sach);
+    printf("\nDiem toan: %.1f diem", diemToan);
+    printf("\nDiem ly: %.1f diem", diemLy);
+    printf("\nDiem van: %.1f diem", diemVan);
+    printf("\nNam sinh cua ban: %d (%d tuoi)", namSinh, 2026 - namSinh);
+    printf("\nNgan sach cua ban: %dVND", nganSach);
 
-    diem_trung_binh = (diem_toan + diem_ly + diem_van) / 3;
-    printf("\nDiem trung binh: %.2f diem", diem_trung_binh);
+    //Tính điểm trung bình & in ra điểm trung binh
+    diemTrungBinh = (diemToan + diemLy + diemVan) / 3;
+    printf("\nDiem trung binh: %.2f diem", diemTrungBinh);
 
-    printf("\n\nDia chi cua bien diem_van: %p", &diem_van);
-    printf("\nDia chi cua bien diem_ly: %p", &diem_ly);
-    printf("\nDia chi cua bien diem_van: %p", &diem_van);
-    printf("\nDia chi cua bien nam_sinh: %p", &nam_sinh);
-    printf("\nDia chi cua bien ngan_sach: %p", &ngan_sach);
-    printf("\nDia chi cua bien diem_trung_binh: %p", &diem_trung_binh);
+    //In ra địa chỉ của các biến
+    printf("\n\nDia chi cua bien diemToan: %p", &diemToan);
+    printf("\nDia chi cua bien diemLy: %p", &diemLy);
+    printf("\nDia chi cua bien diemVan: %p", &diemVan);
+    printf("\nDia chi cua bien namSinh: %p", &namSinh);
+    printf("\nDia chi cua bien nganSach: %p", &nganSach);
+    printf("\nDia chi cua bien diemTrungBinh: %p", &diemTrungBinh);
 
-    tien_do = ngan_sach / 26388.0;
-    printf("\n\nNgan sach cua ban %d(vnd) = %.2f (do la)", ngan_sach, tien_do);
+    tienDo = nganSach / 26388.0;
+    printf("\n\nNgan sach cua ban %d(VND) = %.2f(USD)", nganSach, tienDo);
     return 0;
 }
