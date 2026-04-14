@@ -36,14 +36,14 @@ int main() {
     float diem_trung_binh;
     float tien_do;
 
-    printf("\nDiem toan: %.1f", diem_toan);
-    printf("\nDiem ly: %.1f", diem_ly);
-    printf("\nDiem van: %.1f", diem_van);
+    printf("\nDiem toan: %.1f diem", diem_toan);
+    printf("\nDiem ly: %.1f diem", diem_ly);
+    printf("\nDiem van: %.1f diem", diem_van);
     printf("\nNam sinh cua ban: %d", nam_sinh);
     printf("\nNgan sach cua ban: %d VND", ngan_sach);
 
     diem_trung_binh = (diem_toan + diem_ly + diem_van) / 3;
-    printf("\nDiem trung binh: %.2f", diem_trung_binh);
+    printf("\nDiem trung binh: %.2f diem", diem_trung_binh);
 
     printf("\n\nDia chi cua bien diem_van: %p", &diem_van);
     printf("\nDia chi cua bien diem_ly: %p", &diem_ly);
