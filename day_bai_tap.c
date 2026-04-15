@@ -108,13 +108,13 @@ int main(void) {
         if (delta < 0) {
             printf("Phuong trinh vo nghiem ");
         } else if (delta > 0) {
-            x1 = (-b + sqrt(delta)) / (2 * a);
-            x2 = (-b - sqrt(delta)) / (2 * a);
+            x1 = (-b + sqrt(delta)) / (2 * a); // Note (2*a)
+            x2 = (-b - sqrt(delta)) / (2 * a); // Note (2*a)
 
-            printf("Phuong trinh co 2 nghiem: \nx1 = %.2f,\nx2 = %.2f", x1, x2);
+            printf("Phuong trinh co 2 nghiem: \nx1 = %.2f \nx2 = %.2f", x1, x2);
         } else // delta == 0
         {
-            x1 = -b / (2 * a);
+            x1 = -b / (2 * a); // Note (2*a)
             printf("Phuong trinh co nghiem kep: \nx1 = x2 = %.2f", x1);
         }
     }
