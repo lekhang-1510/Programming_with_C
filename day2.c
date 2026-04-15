@@ -12,8 +12,6 @@ int main() {
     return 0;
 }*/
 
-#include <stdio.h>
-
 
 /*BAI TAP:
 1. Tạo một chương trình C:
@@ -26,6 +24,8 @@ int main() {
 + Điểm trung bình
 + Chuyển đổi giữa tiền Việt và tiền Đô la (Làm tròn 2 chữ số)
 */
+
+#include <stdio.h>
 
 int main() {
     float diemToan = 7.8f;
@@ -47,7 +47,8 @@ int main() {
     printf("\nDiem trung binh: %.2f diem", diemTrungBinh);
 
     //In ra địa chỉ của các biến
-    printf("\n\nDia chi cua bien diemToan: %p", &diemToan);
+    printf("\n\n============ Dia chi cac bien ============");
+    printf("\nDia chi cua bien diemToan: %p", &diemToan);
     printf("\nDia chi cua bien diemLy: %p", &diemLy);
     printf("\nDia chi cua bien diemVan: %p", &diemVan);
     printf("\nDia chi cua bien namSinh: %p", &namSinh);
