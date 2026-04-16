@@ -28,34 +28,34 @@ int main() {
 #include <stdio.h>
 
 int main() {
-    float diemToan = 7.8f;
-    float diemLy = 8.3f;
-    float diemVan = 6.5f;
-    int namSinh = 2001;
-    int nganSach = 15000000;
-    float diemTrungBinh;
-    float tienDo;
+    float mathScore = 7.8f;
+    float physicsScore = 8.3f;
+    float literatureScore = 6.5f;
+    unsigned short birthYear = 2001;
+    unsigned short budget = 15000000;
+    float averageScore;
+    float budgetUSD;
 
-    printf("\nDiem toan: %.1f diem", diemToan);
-    printf("\nDiem ly: %.1f diem", diemLy);
-    printf("\nDiem van: %.1f diem", diemVan);
-    printf("\nNam sinh cua ban: %d (%d tuoi)", namSinh, 2026 - namSinh);
-    printf("\nNgan sach cua ban: %dVND", nganSach);
+    printf("\nDiem toan: %.1f diem", mathScore);
+    printf("\nDiem ly: %.1f diem", physicsScore);
+    printf("\nDiem van: %.1f diem", literatureScore);
+    printf("\nNam sinh cua ban: %d (%d tuoi)", birthYear, 2026 - birthYear);
+    printf("\nNgan sach cua ban: %dVND", budget);
 
     //Tính điểm trung bình & in ra điểm trung binh
-    diemTrungBinh = (diemToan + diemLy + diemVan) / 3;
-    printf("\nDiem trung binh: %.2f diem", diemTrungBinh);
+    averageScore = (mathScore + physicsScore + literatureScore) / 3;
+    printf("\nDiem trung binh: %.2f diem", averageScore);
 
     //In ra địa chỉ của các biến
     printf("\n\n============ Dia chi cac bien ============");
-    printf("\nDia chi cua bien diemToan: %p", &diemToan);
-    printf("\nDia chi cua bien diemLy: %p", &diemLy);
-    printf("\nDia chi cua bien diemVan: %p", &diemVan);
-    printf("\nDia chi cua bien namSinh: %p", &namSinh);
-    printf("\nDia chi cua bien nganSach: %p", &nganSach);
-    printf("\nDia chi cua bien diemTrungBinh: %p", &diemTrungBinh);
+    printf("\nDia chi cua bien diemToan: %p", &mathScore);
+    printf("\nDia chi cua bien diemLy: %p", &physicsScore);
+    printf("\nDia chi cua bien diemVan: %p", &literatureScore);
+    printf("\nDia chi cua bien namSinh: %p", &birthYear);
+    printf("\nDia chi cua bien nganSach: %p", &budget);
+    printf("\nDia chi cua bien diemTrungBinh: %p", &averageScore);
 
-    tienDo = nganSach / 26388.0;
-    printf("\n\nNgan sach cua ban %d(VND) = %.2f(USD)", nganSach, tienDo);
+    budgetUSD = budget / 26388.0;
+    printf("\n\nNgan sach cua ban %d(VND) = %.2f(USD)", budget, budgetUSD);
     return 0;
-}//Update 15/4/2026
+} //Update 15/4/2026
