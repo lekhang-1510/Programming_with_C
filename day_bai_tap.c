@@ -54,6 +54,7 @@ int main() {
     return 0;
 }*/
 
+
 //NGÀY 15/11/2026 - BAITAPTULAM
 /*BÀI TẬP 3: Viết chương trình C giải phương trình bậc 2: ax^2 +bx +c = 0
  * - Yêu cầu:
@@ -74,9 +75,8 @@ int main() {
  *       x1 = x2 = -b/2*a
  */
 
+/*
 #include <stdio.h>
-#include <math.h>
-
 int main(void) {
     //Khai báo các biến
     float a, b, c, x1, x2, delta;
@@ -117,6 +117,62 @@ int main(void) {
             x1 = -b / (2 * a); // Note (2*a)
             printf("Phuong trinh co nghiem kep: \nx1 = x2 = %.2f", x1);
         }
+    }
+    return 0;
+}
+*/
+
+
+/*NGÀY 15/11/2026 - BAITAPTULAM
+ BÀI TẬP 4: Câu điều kiện
+  - Cho 1 biến month, year có kiểu dữ liệu unsigned short (%hu):
+  - Cho người dùng nhập vào tháng và hiện thị số ngày:
+       + Nếu month = 1,3,5,7,8,10,12 thì in ra "Tháng ... có 31 ngày"
+       + Nếu month = 4,6,9,11 thì in ra "Tháng ... có 30 ngày"
+       + Nếu month = 2 thì thực hiện tính toán:
+                Nếu year chia hết cho 4 và year không chia hết cho 100 hoặc year chia hết
+               cho 400 thì in ra "Tháng 2 có 29 ngày"
+                Còn không in ra "Tháng 2 có 28 ngày"
+       + Còn lại in ra tháng không hợp          */
+
+#include <stdio.h>
+
+int main(void) {
+    unsigned short month, year;
+
+    //Nhập dữ liêu
+    printf("Nhap month (1 -- 12): ");
+    scanf("%hu", &month);
+
+
+    //Xử lí dữ liêu && in ra kết quả
+    switch (month) {
+        case 1:
+        case 3:
+        case 5:
+        case 7:
+        case 8:
+        case 10:
+        case 12:
+            printf("The month %hu has 31 days ", month);
+            break;
+        case 4:
+        case 6:
+        case 9:
+        case 11:
+            printf("The month %hu has 30 days ", month);
+            break;
+        case 2:
+            printf("Nhap year: ");
+            scanf("%hu", &year);
+            if (year % 4 == 0 && year % 100 != 0 || year % 400 == 0) {
+                printf("Month 2 of %hu has 29 days ", year);
+            } else {
+                printf("Month 2 of %hu has 28 days ", year);
+            }
+            break;
+        default:
+            printf("Invalid month ");
     }
     return 0;
 }
