@@ -154,25 +154,25 @@ int main(void) {
         case 8:
         case 10:
         case 12:
-            printf("The month %hu has 31 days ", month);
+            printf("Month %hu has 31 days ", month);
             break;
         case 4:
         case 6:
         case 9:
         case 11:
-            printf("The month %hu has 30 days ", month);
+            printf("Month %hu has 30 days ", month);
             break;
         case 2:
             printf("Nhap year: ");
             scanf("%hu", &year);
-            if (year % 4 == 0 && year % 100 != 0 || year % 400 == 0) {
+            if ((year % 4 == 0 && year % 100 != 0) || (year % 400 == 0)) {
                 printf("Month 2 of %hu has 29 days ", year);
             } else {
                 printf("Month 2 of %hu has 28 days ", year);
             }
             break;
         default:
-            printf("Invalid month ");
+            printf("Invalid month\n ");
     }
     return 0;
 }
