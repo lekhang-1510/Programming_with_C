@@ -30,7 +30,7 @@ int main() {
     int number;
 
     printf("Enter your number: ");
-    scanf("%d", number);
+    scanf("%d", &number);
 
     if (number == 0) {
         printf("The number %d is neither an even nor an odd number.", number);
