@@ -8,14 +8,14 @@ int main() {
     int number;
     printf("Enter your number: ");
     scanf("%d", &number);
-
-    if (number % 2 == 0) {
-        printf("The number %d is an even number.", number);
-    } else {
-        printf("The number %d is an odd number.", number);
-    }
     if (number == 0) {
         printf("The number %d is neither an even nor an odd number.", number);
+    } else {
+        if (number % 2 == 0) {
+            printf("The number %d is an even number.", number);
+        } else {
+            printf("The number %d is an odd number.", number);
+        }
     }
     return 0;
 }
