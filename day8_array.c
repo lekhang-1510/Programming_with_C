@@ -15,10 +15,11 @@ int main() {
         printf("Nhap vao phan tu thu %d: ", i + 1);
         scanf("%d", &numbers[i]);
     }
-
+    printf("\n====== ARRAY NUMBERS ======\n");
     for (int i = 0; i < length; i++) {
-        printf("Phan tu thu %d: %d\n", i + 1, numbers[i]);
+        printf("||   Phan tu thu %2d: %2d  ||\n", i + 1, numbers[i]);
     }
+    printf("===========================");
     return 0;
 }
 
