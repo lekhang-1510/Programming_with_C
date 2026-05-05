@@ -5,7 +5,7 @@ int main() {
     int numbers[MAX_SIZE];
     int length;
     //int number;
-    printf("Nhap so luong phan tu muon them vao numbers: ");
+    printf("Nhap so luong phan tu muon them: ");
     scanf("%d", &length);
     if (length > MAX_SIZE || length <= 0) {
         printf("KHONG HOP LE!!!");
