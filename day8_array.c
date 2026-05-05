@@ -5,12 +5,13 @@ int main() {
     int number;
     printf("Nhap so luong phan tu muon them vao numbers: ");
     scanf("%d", &number);
-    if (number > 10) {
-        printf("Vuot qua do dai mang numbers !!!");
+    if (number > 10 || number <= 0) {
+        printf("KHONG HOP LE!!!");
+        return 0;
     }
     for (int i = 0; i < number; i++) {
         printf("Nhap vao phan tu thu %d: ", i + 1);
-        scanf("%d:", &numbers[i]);
+        scanf("%d", &numbers[i]);
     }
 
     for (int i = 0; i < number; i++) {
